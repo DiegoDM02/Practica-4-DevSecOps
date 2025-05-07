@@ -1,0 +1,9 @@
+FROM php:8.2-cli
+
+WORKDIR /var/www/html
+
+COPY app/ /var/www/html
+
+EXPOSE 7777
+
+CMD ["php", "-S", "0.0.0.0:7777", "router.php"]
