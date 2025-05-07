@@ -9,8 +9,8 @@ RUN apt-get update && \
     apt-get install -y apache2 php git curl && \
     apt-get clean
 
-# Descargar una aplicación PHP sencilla (por ejemplo: php-hello-world)
-RUN git clone https://github.com/DiegoDM02/mi-app-php /tmp/instalacionapachephp && \ 
+# Descargar una aplicación PHP sencilla
+RUN git clone https://github.com/DiegoDM02/Practica-4-DevSecOps /tmp/instalacionapachephp && \ 
     rm -rf /var/www/html/* && \
     mv /tmp/instalacionapachephp/* /var/www/html/
 
